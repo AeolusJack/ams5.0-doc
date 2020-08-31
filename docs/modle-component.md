@@ -3,4 +3,4 @@
 
 |模块|模块功能|异同点  
 |:---|:---:|---:|  
-|account-customer-api|核心业务的所有Dto和枚举|将4.0的账户和客户Api模块进行了合并
+|account-customer-api|核心业务的所有Dto和枚举|将4.0的账户和客户Api模块进行了合并|
