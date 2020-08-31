@@ -123,7 +123,7 @@ public class SxAccountOpenTelegramConventer extends SxComonAbstractTelegraConven
     + 若是客户新增表，需实现对应的service接口CustomerInfoExtendService，CustomerInfoExtendBillService，并实现接口中的方法（save方法应支持update，与update合一）
     + 按步骤添加表后，不用考虑流程问题，将自动将此表加入流程，进行相关业务处理
 
-## 简易业务逻辑引擎使用  
+## 简易业务逻辑规则引擎使用  
 + 支持表达式：  
   |表达式符号|符号含义|符号两端参数要求|
   |:---|:---:|---:|

@@ -9,6 +9,7 @@
    + 接口对接方式
    + 发布接口列表
    + 账户和客户新增表方式
+   + 简单业务逻辑规则引擎使用
 + 集成进的ureport报表开发平台指导
    + ureport外部资源链接:
       + [gitee（码云开源项目链接）](https://gitee.com/youseries/ureport/ "giee开源项目链接")
