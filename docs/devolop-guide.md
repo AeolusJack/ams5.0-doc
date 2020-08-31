@@ -78,3 +78,13 @@ public class SxAccountOpenTelegramConventer extends SxComonAbstractTelegraConven
 ## 发布接口列表
 
 ## 账户和客户新增表方式
+
+## 简易业务逻辑引擎使用  
++ 支持表达式：  
+  |表达式符号|符号含义|符号两端参数要求|
+  |:---|:---:|---:|
+  |=|相等含义，包含字符串的比较|可为所有基本类型数据和String类型数据|
+  |<|小于含义｜仅支持int和long类型的数据|
+  |>|大于含义｜仅支持int和long类型的数据|
+
+
