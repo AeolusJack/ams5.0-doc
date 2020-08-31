@@ -3,8 +3,7 @@
 ## 接口对接方式  
 &nbsp;&nbsp;&nbsp;由于暴露接口底层使用的是简单适配模式去做的，所以接口对接也需按照此种开发方式。
 设置对应的接口编码即可自动适配。  
-Demo(关于开户接口的对接，做了报文转换)：
-```
++ Demo(关于开户接口的对接，做了报文转换)：
 /**
  * @program: ams
  * @description: 账户开立报文转换器
@@ -76,7 +75,9 @@ public class SxAccountOpenTelegramConventer extends SxComonAbstractTelegraConven
 
 ```
 ## 发布接口列表
-
+|接口码|接口功能|接口使用注意|
+|:---|:---:|---:|
+|AMS|账户开立接口|必传参数|
 ## 账户和客户新增表方式
 
 ## 简易业务逻辑引擎使用  
