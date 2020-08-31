@@ -5,6 +5,7 @@
 + hibernate（沿用4.0）
 + 前端进行了更替（使用bootstrap等，在逐渐去除layui）
 + 简易业务逻辑规则匹配引擎（自开，BusinessEngine）
+---
 # 环境
 + idea开发工具
 + sun jdk1.8
