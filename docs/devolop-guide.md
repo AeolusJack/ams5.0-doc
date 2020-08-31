@@ -119,7 +119,7 @@ public class SxAccountOpenTelegramConventer extends SxComonAbstractTelegraConven
 + 项目组新增账户表和客户表方式（暂时只适合账户客户各拓展一张表）
     + 项目组模块开发对应的表实体entity
     + 项目组模块开发对应的Repository
-    + 若是账户新增表，需实现对应的service接口AccountInfoExtendBillService，AccountInfoExtendService，并实现接口中的方法（save方法支持update，与update合一）
+    + 若是账户新增表，需实现对应的service接口AccountInfoExtendBillService，AccountInfoExtendService，并实现接口中的方法（save方法应支持update，与update合一）
     + 按步骤添加表后，不用考虑流程问题，将自动将此表加入流程，进行相关业务处理
 
 ## 简易业务逻辑引擎使用  
