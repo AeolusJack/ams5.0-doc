@@ -13,7 +13,7 @@
 |pbc-service|人行业务的所有service实现|维持4.0代码不变|
 |risk-api|风险分析业务的所有Dto和枚举|暂未实现或合并迁移|
 |risk-service|风险业务的所有service实现|暂未实现或合并迁移|
-|ams-web|聚合层，所有controller和部分聚合业务|对4.0改造较大｜
+|ams-web|聚合层，所有controller和部分聚合业务|对4.0改造较大|
 |db-entity|数据实体entity的公共和父类部分，以及相关包括并不仅限于id的生成设置等|维持4.0不变，非业务代码|
 |poi|表单工具|维持4.0不变|
 |system-api|系统服务部分的所有Dto和枚举|相比4.0，添加了部分功能|
