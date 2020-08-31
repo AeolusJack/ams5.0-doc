@@ -77,9 +77,10 @@ public class SxAccountOpenTelegramConventer extends SxComonAbstractTelegraConven
 }
 
 ```    
-## 发布接口列表
+## 发布接口
++ 发布接口列表：
 |接口码|接口功能|接口使用注意|
-|:---|:---:|---:|
+|:---|:---:|:---|
 |AMS_SYNC_0001|开户自动报送操作编码|必需参数：acctNo，对应流水类型等账户开立报送必须字段，接口中有校验，与4.0一致|
 |AMS_SYNC_0002|变更自动报送操作编码|必需参数：acctNo，对应流水类型等账户变更报送必须字段，接口中有校验，与4.0一致|
 |AMS_SYNC_0003|销户自动报送操作编码|必需参数：acctNo，对应流水类型等账户撤销报送必须字段，接口中有校验，与4.0一致|
@@ -108,10 +109,18 @@ public class SxAccountOpenTelegramConventer extends SxComonAbstractTelegraConven
 
 &nbsp;&nbsp;&nbsp;**注意：所有接口，必须有serialNumber（流水号），userName（接口调用用户），organCode（用户所属机构-行内机构号）等参数,根据不同接口有部分不同必须字段，已在上面列出（更具体可参考接口文档）**
 
-
++ 项目组新增接口方式
+    + 每个接口都是一套流程: businessFlowExpander ——> initer ——> checker ——> processer,需开发此流程，在项目组模块
+    + 在AmsCommonRequest中需给extendBusinessType字段赋值，赋为项目组新增的接口码，String类型
+    + 最后与其他已发布接口一样，开发对应报文转换器即可（可抽象出来公共的报文转换模版，根据不同的实现适配不同的报文转换器）
 
 
 ## 账户和客户新增表方式
++ 项目组新增账户表和客户表方式（暂时只适合账户客户各拓展一张表）
+    + 项目组模块开发对应的表实体entity
+    + 项目组模块开发对应的Repository
+    + 若是账户新增表，需实现对应的service接口AccountInfoExtendBillService，AccountInfoExtendService，并实现接口中的方法（save方法支持update，与update合一）
+    + 按步骤添加表后，不用考虑流程问题，将自动将此表加入流程，进行相关业务处理
 
 ## 简易业务逻辑引擎使用  
 + 支持表达式：  
